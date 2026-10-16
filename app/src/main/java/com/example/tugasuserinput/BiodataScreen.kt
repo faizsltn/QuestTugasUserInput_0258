@@ -31,3 +31,8 @@ fun BiodataScreen() {
 
     val scrollState = rememberScrollState()
 
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.Black)
+    ) {
