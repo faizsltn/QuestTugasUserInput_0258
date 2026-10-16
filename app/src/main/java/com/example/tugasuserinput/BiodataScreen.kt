@@ -43,3 +43,13 @@ fun BiodataScreen() {
                     .fillMaxWidth()
                     .height(300.dp)
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.gambar),
+                    contentDescription = null,
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Crop
+                )
+            }
+            Spacer(modifier = Modifier.weight(1f))
+        }
+
