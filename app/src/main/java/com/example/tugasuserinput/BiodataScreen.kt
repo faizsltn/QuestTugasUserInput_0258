@@ -166,3 +166,45 @@ fun BiodataScreen() {
 
                     Spacer(modifier = Modifier.height(20.dp))
 
+                    // Label Skill
+                    Text(
+                        text = stringResource(id = R.string.label_pilih_skill),
+                        modifier = Modifier.fillMaxWidth(),
+                        fontSize = 14.sp,
+                        color = Color.Black,
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    // Checkboxes
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Checkbox(
+                                checked = isAndroidChecked,
+                                onCheckedChange = { isAndroidChecked = it }
+                            )
+                            Text(text = stringResource(id = R.string.skill_android), fontSize = 12.sp)
+                        }
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Checkbox(
+                                checked = isUiUxChecked,
+                                onCheckedChange = { isUiUxChecked = it }
+                            )
+                            Text(text = stringResource(id = R.string.skill_ui_ux), fontSize = 12.sp)
+                        }
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Checkbox(
+                                checked = isWebChecked,
+                                onCheckedChange = { isWebChecked = it }
+                            )
+                            Text(text = stringResource(id = R.string.skill_web), fontSize = 12.sp)
+                        }
+                    }
+
+                    Spacer(modifier = Modifier.height(24.dp))
+
