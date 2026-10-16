@@ -53,3 +53,12 @@ fun BiodataScreen() {
             Spacer(modifier = Modifier.weight(1f))
         }
 
+// Card Mengapung
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .verticalScroll(scrollState),
+            verticalArrangement = Arrangement.Bottom
+        ) {
+            Spacer(modifier = Modifier.height(200.dp))
+
