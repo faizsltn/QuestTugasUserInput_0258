@@ -129,3 +129,23 @@ fun BiodataScreen() {
                     )
 
                     Spacer(modifier = Modifier.height(16.dp))
+
+                    // Tgl Lahir & Experience
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        OutlinedTextField(
+                            value = tglLahir,
+                            onValueChange = { tglLahir = it },
+                            placeholder = { Text(stringResource(id = R.string.hint_tgl_lahir)) },
+                            trailingIcon = {
+                                Icon(
+                                    painter = painterResource(id = R.drawable.ic_calendar),
+                                    contentDescription = null
+                                )
+                            },
+                            modifier = Modifier.weight(1f),
+                            shape = RoundedCornerShape(16.dp)
+                        )
+
