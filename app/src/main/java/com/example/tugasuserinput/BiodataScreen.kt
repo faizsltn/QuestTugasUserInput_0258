@@ -149,3 +149,20 @@ fun BiodataScreen() {
                             shape = RoundedCornerShape(16.dp)
                         )
 
+                        OutlinedTextField(
+                            value = selectedExperience,
+                            onValueChange = { selectedExperience = it },
+                            placeholder = { Text(stringResource(id = R.string.hint_experience)) },
+                            trailingIcon = {
+                                Icon(
+                                    painter = painterResource(id = R.drawable.ic_dropdown),
+                                    contentDescription = null
+                                )
+                            },
+                            modifier = Modifier.weight(1f),
+                            shape = RoundedCornerShape(16.dp)
+                        )
+                    }
+
+                    Spacer(modifier = Modifier.height(20.dp))
+
