@@ -72,3 +72,19 @@ fun BiodataScreen() {
                 ),
                 elevation = CardDefaults.cardElevation(defaultElevation = 16.dp)
             ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(24.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    // Judul
+                    Text(
+                        text = stringResource(id = R.string.form_title),
+                        fontSize = 24.sp,
+                        color = colorResource(id = R.color.text_title),
+                        style = MaterialTheme.typography.titleLarge
+                    )
+
+                    Spacer(modifier = Modifier.height(4.dp))
+
