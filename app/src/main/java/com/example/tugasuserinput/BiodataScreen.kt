@@ -29,3 +29,5 @@ fun BiodataScreen() {
     var isUiUxChecked by remember { mutableStateOf(false) }
     var isWebChecked by remember { mutableStateOf(false) }
 
+    val scrollState = rememberScrollState()
+
