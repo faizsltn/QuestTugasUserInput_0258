@@ -36,3 +36,10 @@ fun BiodataScreen() {
             .fillMaxSize()
             .background(Color.Black)
     ) {
+        // Background Header Image
+        Column(modifier = Modifier.fillMaxSize()) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(300.dp)
+            ) {
