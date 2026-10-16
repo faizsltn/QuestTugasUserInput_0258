@@ -62,3 +62,13 @@ fun BiodataScreen() {
         ) {
             Spacer(modifier = Modifier.height(200.dp))
 
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .wrapContentHeight(),
+                shape = RoundedCornerShape(topStart = 32.dp, topEnd = 32.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = colorResource(id = R.color.form_background)
+                ),
+                elevation = CardDefaults.cardElevation(defaultElevation = 16.dp)
+            ) {
